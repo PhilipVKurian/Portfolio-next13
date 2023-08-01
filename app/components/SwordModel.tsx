@@ -38,9 +38,7 @@ const SwordModel = () => {
             <primitive 
                 object={sword.scene}
                 scale={0.5}
-                position={[0, 0, 0]}
-                
-                
+                position={[0, 0, 0]}                
             />
         </mesh>
     )
