@@ -5,7 +5,7 @@ import {OrbitControls, Preload, useGLTF } from '@react-three/drei'
 
 const ModelCanvas = () => {
     return(
-        <Canvas
+        <Canvas      
             dpr={[1,2]}            
             frameloop='demand'
             camera={{position: [0,0,20], fov:20}}
@@ -38,7 +38,8 @@ const SwordModel = () => {
             <primitive 
                 object={sword.scene}
                 scale={0.5}
-                position={[0, 0, 0]}                
+                position={[0, 0, 0]}  
+                              
             />
         </mesh>
     )

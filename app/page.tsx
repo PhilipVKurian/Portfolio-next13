@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import Header from './components/Header'
-import Navbar from './components/Navigation'
 import HomePage from './home/page'
 import AboutPage from './about/page'
 import ContactPage from './contact/page'

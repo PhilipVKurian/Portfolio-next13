@@ -7,6 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '270px',   // Small screens
+        'md': '768px',   // Medium screens
+        'lg': '1024px',  // Large screens
+        'xl': '1280px',  // Extra large screens
+      },
+      keyframes: {
+        animate:{
+          '0%, 10%, 30%, 100%':{
+            width: '0%'
+          },
+          '70%,80%,90%' : {
+            width: '100%'
+          },
+          
+        }
+      },
+      animation: {
+        animate: 'animate 6s ease',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

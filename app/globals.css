@@ -2,8 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+  
+}
 
 body {
-  color: white
+  color: white;
 }
+
+h1 {
+  @apply text-4xl font-semibold;
+  font-family: var(--font-roboto-mono);
+}
+
+h2 {
+  @apply text-3xl font-semibold; /* Adjust classes as needed */
+  font-family: var(--font-roboto-mono);
+}
+
+h3 {
+  @apply text-2xl font-medium; /* Adjust classes as needed */
+  font-family: var(--font-roboto-mono);
+}
+
+h4 {
+  @apply text-2xl font-normal;
+}
+
+#welcome{
+  @apply text-4xl !absolute lg:top-52 lg:left-40 sm:left-1/2; 
+}
+
+.welcome::before{
+  @apply content-['________'] absolute text-red-700 border-r-4 border-green-500 h-full overflow-hidden animate-animate;
+}
+
+
