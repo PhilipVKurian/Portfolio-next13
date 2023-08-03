@@ -10,7 +10,7 @@ module.exports = {
       screens: {
         'sm': '270px',   // Small screens
         'md': '768px',   // Medium screens
-        'lg': '1024px',  // Large screens
+        'lg': '1224px',  // Large screens
         'xl': '1280px',  // Extra large screens
       },
       keyframes: {
@@ -19,7 +19,7 @@ module.exports = {
             width: '0%'
           },
           '70%,80%,90%' : {
-            width: '100%'
+            width: '120%'
           },
           
         }

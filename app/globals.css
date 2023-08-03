@@ -29,8 +29,17 @@ h4 {
   @apply text-2xl font-normal;
 }
 
+.intro{
+  overflow: visible;
+}
+
+.Typewriter {
+  @apply text-3xl;
+  font-family: var(--font-roboto-mono);
+}
+
 #welcome{
-  @apply text-4xl !absolute lg:top-52 lg:left-40 sm:left-1/2; 
+  @apply text-4xl !absolute lg:top-20 lg:left-80 md:left-1/2 sm:invisible md:visible; 
 }
 
 .welcome::before{
