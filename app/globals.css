@@ -16,12 +16,12 @@ h1 {
 }
 
 h2 {
-  @apply text-3xl font-semibold; /* Adjust classes as needed */
+  @apply text-3xl font-semibold; 
   font-family: var(--font-roboto-mono);
 }
 
 h3 {
-  @apply text-2xl font-medium; /* Adjust classes as needed */
+  @apply text-2xl font-medium;
   font-family: var(--font-roboto-mono);
 }
 
