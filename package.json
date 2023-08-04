@@ -17,6 +17,7 @@
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "gsap": "^3.12.2",
+    "lodash": "^4.17.21",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -28,7 +29,10 @@
   },
   "devDependencies": {
     "@react-three/fiber": "^8.13.6",
+    "@types/lodash-es": "^4.17.8",
     "@types/three": "^0.155.0",
+    "leva": "^0.9.35",
+    "lodash-es": "^4.17.21",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "three": "^0.155.0",
     "typewriter-effect": "^2.20.1"
