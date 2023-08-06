@@ -10,7 +10,7 @@ export default function AboutPage() {
 
         <h4 className='text-center my-11 opacity-50'>About</h4>
         <section>
-          <p className='text-center mx-36 font-semibold opacity-60'>A hardworking individual with a strong desire 
+          <p className='text-center mx-36 font-semibold opacity-60 '>A hardworking individual with a strong desire 
             to build beautiful and useful applications. 
             My strengths are ideation and problem-solving, 
             and my hobbies are; drawing, modeling, and playing 

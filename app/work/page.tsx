@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 export default function WorkPage() {
   return (
-    <div id='work' className="flex flex-column min-h-screen top-0 bg-cover bg-center"
+    <div id='work' className="flex flex-column min-h-screen top-0 bg-cover bg-center border-b-4 border-b-[#E901F8]"      
     style={{
       backgroundImage: `url('/bg-work.jpg')`,       
     }}>
     
-    <article id='about' className="flex-col items-center">
+    <article id='about' className="flex-col items-center ">
 
     <h4 className='text-center my-11 opacity-50'>Work</h4>
     <section>
@@ -17,7 +17,6 @@ export default function WorkPage() {
       </p>
 
     </section>
-
 
     <h4 className='text-center my-11 opacity-50'>Future Projects</h4>
     <section>
