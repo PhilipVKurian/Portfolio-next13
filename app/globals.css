@@ -27,6 +27,7 @@ h3 {
 
 h4 {
   @apply text-2xl font-normal;
+  font-family: var(--font-hanuman);
 }
 
 .intro{
@@ -46,4 +47,7 @@ h4 {
   @apply content-['________'] absolute text-red-700 border-r-4 border-green-500 h-full overflow-hidden animate-animate;
 }
 
-
+#about {
+  @apply h-[580px] w-[830px] bg-white/10 my-auto mx-auto rounded-2xl backdrop-filter backdrop-blur-sm shadow-lg border-l-[#2A2329] border-l border-t-[#2A2329] border-t
+  
+}

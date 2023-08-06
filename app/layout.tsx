@@ -1,6 +1,6 @@
 import './globals.css'
 import Header from './components/Header'
-import { Roboto_Mono } from 'next/font/google'
+import { Roboto_Mono, Hanuman, Inter } from 'next/font/google'
 
 const roboto = Roboto_Mono(
   {
@@ -9,6 +9,21 @@ const roboto = Roboto_Mono(
     display: 'swap'
   }
 )
+
+const hanuman = Hanuman(
+  {
+    weight: ["900" , "100" , "300" , "400" , "700"],
+    subsets: ['khmer'], 
+    variable: '--font-hanuman',
+    display: 'swap'
+  }
+)
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Philip Kurian',
@@ -23,7 +38,7 @@ export default function RootLayout(
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} + bg-black` }>
+      <body className={`${roboto.variable} + ${hanuman.variable} + bg-black` }>
 
         <Header/>
         {children} 

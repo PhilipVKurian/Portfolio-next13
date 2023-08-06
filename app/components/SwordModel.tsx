@@ -1,8 +1,7 @@
 import { Suspense, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Gltf, OrbitControls, Preload, useGLTF } from '@react-three/drei';
-import { TextureLoader } from 'three';
-import { useControls, folder } from 'leva';
+
 
 interface TweakProps {
   displacementScaleVal: number;
@@ -55,13 +54,7 @@ const ModelCanvas = () => {
       camera={{ position: [0, 0, 0], fov: 100 }}
       gl={{ preserveDrawingBuffer: true, logarithmicDepthBuffer: true }}
     >
-
-    <hemisphereLight 
-      intensity={1} 
-      position={[4, 4, 1]} 
-      groundColor={'#404040'} /> 
-
-      {/* <ambientLight intensity={1} />  */}
+      <pointLight intensity={2} position={[0,0, -3]}/>
       <Suspense fallback={null}>
       </Suspense>
       <Preload all />

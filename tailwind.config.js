@@ -27,6 +27,9 @@ module.exports = {
       animation: {
         animate: 'animate 6s ease',
       },
+      borderWidth: {      
+        '16': '16px', 
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
