@@ -31,6 +31,7 @@
     "@react-three/fiber": "^8.13.6",
     "@types/lodash-es": "^4.17.8",
     "@types/three": "^0.155.0",
+    "framer-motion": "^10.15.0",
     "leva": "^0.9.35",
     "lodash-es": "^4.17.21",
     "prettier-plugin-tailwindcss": "^0.4.1",

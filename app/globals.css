@@ -51,3 +51,7 @@ h4 {
   @apply h-[580px] w-[830px] bg-white/10 my-auto mx-auto rounded-2xl backdrop-filter backdrop-blur-sm shadow-lg border-l-[#2A2329] border-l border-t-[#2A2329] border-t;
   text-shadow: 2px 2px 2px black;
 }
+
+.techstack-top{
+  height: 118px;
+}

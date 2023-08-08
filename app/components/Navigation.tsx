@@ -12,7 +12,7 @@ export default function Navbar() {
   
       <ul className="flex flex-row space-x-4 my-2 place-content-center">
 
-        <Link href="#about">
+        <Link href="#about-bg">
           <li className='transition ease-in-out delay-200 bg-red-900 hover:scale-75
              hover:bg-pink-500 duration-200 w-20 text-center'>About
           </li>

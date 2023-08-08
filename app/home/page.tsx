@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import React, { useEffect } from 'react'
 import SwordModel from '../components/SwordModel'
 import Typewriter from 'typewriter-effect';
@@ -21,6 +22,10 @@ export default function HomePage() {
             }}
           />
         </section>
+
+        <span className='absolute bottom-8 left-1/2 animate-bounce' > 
+          <Image src={'/mouse.png'} alt="Mouse Image" width={30} height={40}></Image>
+        </span>    
 
     </article>
   )
