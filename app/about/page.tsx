@@ -28,7 +28,7 @@ export default function AboutPage() {
           <h4 className='text-center mt-8 mb-0 opacity-50'>Tech Stack</h4>
 
           <section className='techstackrow flex flex-row flex-wrap'>
-            <Suspense>
+
               <SkillsToolTip>
                 <TechStack index ={0}/>
               </SkillsToolTip>
@@ -52,11 +52,11 @@ export default function AboutPage() {
               <SkillsToolTip>
                 <TechStack index= {5}/>
               </SkillsToolTip>
-            </Suspense>
+
           </section>
 
           <section className='techstackrow flex flex-row flex-wrap'>
-            <Suspense>
+
               <SkillsToolTip>
                 <TechStack index ={6}/>
               </SkillsToolTip>
@@ -80,7 +80,7 @@ export default function AboutPage() {
               <SkillsToolTip>
                 <TechStack index= {11}/>
               </SkillsToolTip>
-            </Suspense>
+
           </section>
         </section>
         

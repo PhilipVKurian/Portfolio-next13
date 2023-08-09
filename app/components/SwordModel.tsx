@@ -55,8 +55,6 @@ const ModelCanvas = () => {
       gl={{ preserveDrawingBuffer: true, logarithmicDepthBuffer: true }}
     >
       <pointLight intensity={2} position={[0,0, -3]}/>
-      <Suspense fallback={null}>
-      </Suspense>
       <Preload all />
       <Tweak />
     </Canvas>
