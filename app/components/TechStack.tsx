@@ -39,7 +39,7 @@ function Box(props: any | null) {
 
   function CanvasRender(props: any) {
     return(
-        <Canvas frameloop='demand'>          
+        <Canvas>          
           <ambientLight />
           <Box position={[0, 0, 0]} index={props.index}/>
         </Canvas>
