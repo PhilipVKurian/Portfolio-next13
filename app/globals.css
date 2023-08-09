@@ -47,11 +47,30 @@ h4 {
   @apply content-['________'] absolute text-red-700 border-r-4 border-green-500 h-full overflow-hidden animate-animate;
 }
 
-#about {
-  @apply h-[580px] w-[830px] bg-white/10 my-auto mx-auto rounded-2xl backdrop-filter backdrop-blur-sm shadow-lg border-l-[#2A2329] border-l border-t-[#2A2329] border-t;
+#glass {
+  @apply lg:h-[580px] lg:w-[830px] sm:h-[700px] sm:w-[380px] bg-white/10 lg:my-auto lg:mx-auto sm:mx-auto sm:my-24 rounded-2xl backdrop-filter backdrop-blur-sm shadow-lg border-l-[#2A2329] border-l border-t-[#2A2329] border-t;
   text-shadow: 2px 2px 2px black;
 }
 
-.techstack-top{
-  height: 118px;
+.techstackrow{
+  @apply lg:mx-auto md:mx-6 sm:mx-5
 }
+
+
+
+.toolTipContainer .toolTip{
+  @apply invisible left-0 mr-7 z-10 bottom-16 h-[70px] w-[130px] bg-slate-800 rounded-2xl backdrop-filter backdrop-blur-sm shadow-lg border-l-[#2A2329] border-l border-t-[#2A2329] border-t
+}
+
+.toolTipContainer:hover .toolTip{  
+  @apply visible
+}
+
+.toolTip:hover {
+  @apply invisible
+}
+
+.toolTip p {
+  @apply left-4
+}
+

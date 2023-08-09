@@ -8,7 +8,7 @@ export default function WorkPage() {
       backgroundImage: `url('/bg-work.jpg')`,       
     }}>
     
-    <article id='about' className="flex-col items-center ">
+    <article id='glass' className="flex-col items-center ">
 
     <h4 className='text-center my-11 opacity-50'>Work</h4>
     <section>

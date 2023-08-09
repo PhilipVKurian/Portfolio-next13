@@ -17,11 +17,13 @@ export default function Navbar() {
              hover:bg-pink-500 duration-200 w-20 text-center'>About
           </li>
         </Link>
+
         <Link href="#work">
           <li className='transition ease-in-out delay-200 bg-red-900 hover:scale-75
              hover:bg-pink-500 duration-200 w-20 text-center'>Work
           </li>
         </Link>
+        
         <Link href="#contact">
           <li className='transition ease-in-out delay-200 bg-red-900 hover:scale-75
              hover:bg-pink-500 duration-200 w-20 text-center'>Contact
