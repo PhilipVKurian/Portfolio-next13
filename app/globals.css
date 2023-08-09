@@ -50,7 +50,7 @@ h4 {
 }
 
 .techstackrow{
-  @apply lg:mx-auto md:mx-6 sm:mx-5
+  @apply lg:mx-auto md:mx-6 sm:mx-2
 }
 
 .toolTipContainer .toolTip{
