@@ -11,7 +11,7 @@ export default function AboutPage() {
       style={{
         backgroundImage: `url('/bg-about.jpg')`,       
       }}>
-      <article id='glass' className="flex-col items-center">
+      <article id='glass-about' className="flex-col items-center">
 
         <h4 className='text-center xl:my-11 md:my-4 sm:my-2 opacity-50'>About</h4>
 
