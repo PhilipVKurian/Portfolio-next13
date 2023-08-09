@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import TechStack from '../components/TechStack'
 import SkillsToolTip from '../components/SkillsToolTip'
+import { Suspense } from 'react'
 
 export default function AboutPage() {
 
@@ -27,55 +28,59 @@ export default function AboutPage() {
           <h4 className='text-center mt-8 mb-0 opacity-50'>Tech Stack</h4>
 
           <section className='techstackrow flex flex-row flex-wrap'>
-            <SkillsToolTip>
-              <TechStack index ={0}/>
-            </SkillsToolTip>
+            <Suspense>
+              <SkillsToolTip>
+                <TechStack index ={0}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index= {1}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index= {1}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index ={2}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index ={2}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index= {3}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index= {3}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index ={4}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index ={4}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index= {5}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index= {5}/>
+              </SkillsToolTip>
+            </Suspense>
           </section>
 
           <section className='techstackrow flex flex-row flex-wrap'>
-            <SkillsToolTip>
-              <TechStack index ={6}/>
-            </SkillsToolTip>
+            <Suspense>
+              <SkillsToolTip>
+                <TechStack index ={6}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index= {7}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index= {7}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index ={8}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index ={8}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index= {9}/>
-            </SkillsToolTip>
-            
-            <SkillsToolTip>
-              <TechStack index ={10}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index= {9}/>
+              </SkillsToolTip>
+              
+              <SkillsToolTip>
+                <TechStack index ={10}/>
+              </SkillsToolTip>
 
-            <SkillsToolTip>
-              <TechStack index= {11}/>
-            </SkillsToolTip>
+              <SkillsToolTip>
+                <TechStack index= {11}/>
+              </SkillsToolTip>
+            </Suspense>
           </section>
         </section>
         

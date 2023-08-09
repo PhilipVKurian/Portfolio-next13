@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import SwordModel from '../components/SwordModel'
 import Typewriter from 'typewriter-effect';
 export default function HomePage() {
@@ -9,7 +9,9 @@ export default function HomePage() {
     <article id='home' className="flex relative h-screen border-b-4 border-b-[#E901F8]">   
         
         <section className='absolute w-full mr-4 h-full'>
-          <SwordModel/>
+          <Suspense>
+            <SwordModel/>
+          </Suspense>
         </section>
 
         <section className='intro relative mx-auto my-auto'>
