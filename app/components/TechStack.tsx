@@ -32,7 +32,7 @@ function Box(props: any | null) {
         onPointerOver={(event) => setHover(true)}
         onPointerOut={(event) => setHover(false)}>
         <sphereGeometry args={[2]}/>
-        <meshStandardMaterial map={image} opacity={0.5} transparent={true}  />
+        <meshStandardMaterial map={image} opacity={1} transparent={true}  />
       </mesh>
     )
  }

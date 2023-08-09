@@ -24,7 +24,7 @@ export default function Navbar() {
           </li>
         </Link>
         
-        <Link href="#contact">
+        <Link href="#glass-contact">
           <li className='transition ease-in-out delay-200 bg-red-900 hover:scale-75
              hover:bg-pink-500 duration-200 w-20 text-center'>Contact
           </li>
