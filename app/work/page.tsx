@@ -53,7 +53,7 @@ export default function WorkPage() {
                 with tiled maps to create a virtual world that the player can interact with.. Still a work in progress
                 </p>
             </div>
-            <img src="phaser-app.png" className='w-56 h-40 rounded-lg sm:ml-auto sm:mr-auto' alt="Resumaker"/>
+            <img src="phaser-app.PNG" className='w-56 h-40 rounded-lg sm:ml-auto sm:mr-auto' alt="Resumaker"/>
           </div>        
 
         </section>
