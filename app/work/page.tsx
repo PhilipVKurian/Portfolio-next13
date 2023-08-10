@@ -11,9 +11,30 @@ export default function WorkPage() {
 
         <section className='projects  overflow-y-scroll'>
           
+
           <div className='flex lg:flex-row sm:flex-col  px-4 '>
-            <img src="resumaker-form.png" className='w-56 h-40 rounded-lg sm:ml-auto sm:mr-auto' alt="Resumaker"/>
-            <div className='flex flex-col w-[200] mx-2 h-42 overflow-auto border-b-4 border-b-[#888686]'>
+
+            {/* Image and Buttons */}
+            <div className='relative imageDiv w-56 h-40 bg-cover flex-shrink-0 sm:ml-auto sm:mr-auto'>
+              <img
+                src="resumaker-form.png"
+                className='rounded-lg w-full h-full object-cover'
+                alt="Resumaker"
+              />
+              <a href="https://github.com/Sophack/resumaker" target="_blank">
+                <button className='github'>
+                  <img src='github.png' className='w-full h-full object-cover' alt='Github image'/>
+                </button>
+              </a>
+              <a href="https://intense-atoll-83101.herokuapp.com/" target="_blank">
+                <button className='deployed'>
+                  <img src='web.png' className='w-full h-full object-cover' alt='Github image'/>                
+                </button>
+              </a>
+            </div>
+
+            {/* Text on right */}
+            <div className='mx-2 border-b-4  border-b-[#000000] border-opacity-30 '>
               <h4 className='mx-4 opacity-80 lg:text-left sm:text-center sm:mt-2 underline'>Resumaker</h4>
               <p className='mx-4 opacity-80 mb-2 lg:text-left sm:text-center sm:mt-2'>As Bootcamp Students, we wanted to create an app 
                 that allows users to create free resumes! Trying to get a job is one challenge
@@ -22,10 +43,12 @@ export default function WorkPage() {
                 FREE account and not have to enter any credit card details to use the application.
               </p>
             </div>
+
           </div>
 
+
           <div className='flex lg:flex-row sm:flex-col-reverse px-4 mt-6'>
-            <div className='flex lg:flex-col sm:flex-col w-[200] mx-2 h-42 overflow-auto border-b-4  border-b-[#888686] '>
+            <div className='mx-2 h-42 overflow-auto border-b-4 border-b-[#000000] border-opacity-30'>
                 <h4 className='mx-4 opacity-80 lg:text-right sm:text-center sm:mt-2 underline'>Bootcamp Forum</h4>
                 <p className='mx-4 opacity-80 mb-2 lg:text-right sm:text-center sm:mt-2'>This application is a platform for past and present bootcamp students to connect,
                   ask questions, mentor, and network with others going through the same experience. Unlike some other forums, even 
@@ -33,12 +56,53 @@ export default function WorkPage() {
                   allowing users to have a much more personalized experience.
                 </p>
             </div>
-            <img src="bootcampforum.png" className='w-56 h-40 rounded-lg sm:ml-auto sm:mr-auto' alt="Resumaker"/>
+
+            {/* Image and Buttons */}
+            <div className='relative imageDiv w-56 h-40 bg-cover flex-shrink-0 sm:ml-auto sm:mr-auto'>
+              <img
+                src="bootcampforum.png"
+                className='rounded-lg w-full h-full object-cover'
+                alt="Bootcamp Forum"
+              />
+
+              <a href="https://github.com/lavanyavirushan/p2-bootcamp-forum" target="_blank">
+                <button className='github'>
+                  <img src='github.png' className='w-full h-full object-cover' alt='Github image'/>
+                </button>
+              </a>
+
+              <a href="https://github.com/lavanyavirushan/p2-bootcamp-forum" target="_blank">
+                <button className='deployed'>
+                  <img src='web.png' className='w-full h-full object-cover' alt='Github image'/>                
+                </button>
+              </a>
+            </div>
+
           </div>
 
+
           <div className='flex lg:flex-row sm:flex-col  px-4 mt-6'>
-            <img src="weatherprepared.png" className='w-56 h-40 object-cover rounded-lg sm:ml-auto sm:mr-auto' alt="Weather Prepared"/>
-            <div className='flex flex-col w-[200] mx-2 h-42 overflow-auto border-b-4  border-b-[#888686] '>
+            {/* Image and Buttons */}
+            <div className='relative imageDiv w-56 h-40 bg-cover flex-shrink-0 sm:ml-auto sm:mr-auto'>
+              <img
+                src="weatherprepared.png"
+                className='rounded-lg w-full h-full object-cover'
+                alt="Bootcamp Forum"
+              />
+              <a href="https://github.com/PhilipVKurian/weather-prepared" target="_blank">
+              <button className='github'>
+                <img src='github.png' className='w-full h-full object-cover' alt='Github image'/>
+              </button>
+              </a>
+              <a href="https://philipvkurian.github.io/weather-prepared/" target="_blank">
+              <button className='deployed'>
+                <img src='web.png' className='w-full h-full object-cover' alt='Github image'/>                
+              </button>
+              </a>
+            </div>
+
+            {/* Text Row */}
+            <div className='mx-2 h-42 overflow-auto border-b-4  border-b-[#000000] border-opacity-30'>
               <h4 className='mx-4 opacity-80 lg:text-left sm:text-center sm:mt-2 underline'>Weather Prepared</h4>
               <p className='mx-4 opacity-80 mb-2 lg:text-left sm:text-center sm:mt-2'>Weather Prepared The project involves the implementaion of Bulma css,
               javascript/jQuery, and 2 different APIs (openweathermap and weatherbit.io) to predict clothing the user
@@ -46,14 +110,34 @@ export default function WorkPage() {
             </div>
           </div> 
 
+
           <div className='flex lg:flex-row sm:flex-col-reverse  px-4 mt-6'>
-            <div className='flex lg:flex-col sm:flex-col w-[200] mx-2 h-42 overflow-auto border-b-4  border-b-[#888686] '>
+            <div className='sm:flex-col mx-2 h-42 overflow-auto border-b-4  border-b-[#000000] border-opacity-30'>
                 <h4 className='mx-4 opacity-80 lg:text-right sm:text-center sm:mt-2 underline'>Phaser 3 Game</h4>
                 <p className='mx-4 opacity-80 mb-2 lg:text-right sm:text-center sm:mt-2'>A side project im working on. Using the Phaser 3 game engine
                 with tiled maps to create a virtual world that the player can interact with.. Still a work in progress
                 </p>
             </div>
-            <img src="phaser-app.PNG" className='w-56 h-40 rounded-lg sm:ml-auto sm:mr-auto' alt="Resumaker"/>
+
+            {/* Image and Buttons */}
+            <div className='relative imageDiv w-56 h-40 bg-cover flex-shrink-0 sm:ml-auto sm:mr-auto'>
+              <img
+                src="phaser-app.PNG"
+                className='rounded-lg w-full h-full object-cover'
+                alt="Phaser"
+              />
+              <a href="https://github.com/PhilipVKurian/typescript-parcel-game" target="_blank">
+              <button className='github'>
+                <img src='github.png' className='w-full h-full object-cover' alt='Github image'/>
+              </button>
+              </a>
+              <a href="https://super-lokum-edacdb.netlify.app/" target="_blank">
+              <button className='deployed'>
+                <img src='web.png' className='w-full h-full object-cover' alt='Github image'/>                
+              </button>
+              </a>
+            </div>
+
           </div>        
 
         </section>
