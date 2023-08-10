@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div id='about-bg' className="flex flex-column min-h-screen top-[-5] bg-cover bg-center">
       <article id='glass-about' className="flex-col items-center">
 
-        <h4 className='text-center xl:my-11 md:my-4 sm:my-2 opacity-50'>About Me</h4>
+        <h4 className='text-center lg:my-11 md:my-4 sm:my-4 opacity-50'>About Me</h4>
 
         <section>
           <p className='text-center lg:mx-36 md:mx-12 font-semibold opacity-60 '>A hardworking individual with a strong desire 
