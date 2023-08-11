@@ -22,21 +22,22 @@ export default function ProjectsSection(props: Props) {
         {projects.map((project: any) => {
             // console.log(project)
             return (
-              <div className='flex lg:flex-row sm:flex-col my-2 px-4 '>
+              <div key={project.id} className='flex lg:flex-row sm:flex-col my-2 px-4 '>
 
               {/* Image and Buttons */}
               <div className='relative imageDiv w-56 h-40 bg-cover flex-shrink-0 sm:ml-auto sm:mr-auto'>
                 <img
                   src={project.image}
+                  key={project.id}
                   className='rounded-lg w-full h-full object-cover'
                   alt={project.image}
                 />
-                <a href={project.github} target="_blank">
+                <a href={project.github} key={project.id} target="_blank">
                   <button className='github'>
                     <img src='github.png' className='w-full h-full object-cover' alt='Github image'/>
                   </button>
                 </a>
-                <a href={project.deployed} target="_blank">
+                <a href={project.deployed}  key={project.id} target="_blank">
                   <button className='deployed'>
                     <img src='web.png' className='w-full h-full object-cover' alt='Github image'/>                
                   </button>
