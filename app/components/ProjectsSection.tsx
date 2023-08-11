@@ -1,25 +1,36 @@
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 interface Props {
   Projects: Project[]
+  setClicked: React.Dispatch<React.SetStateAction<boolean>>
+  setIndex: React.Dispatch<React.SetStateAction<number>>
 }
 
 
 export default function ProjectsSection(props: Props) {
 
-  const [projects,setProjects] = useState([] as any[]);
+  const [projects,setProjects] = useState([] as Project[]);
+  const [projectKey, setProjectKey] = useState();
 
   useEffect(()=>{    
     setProjects(props.Projects)
   },[])
+
+
+  const handleClick=(id:number)=>{
+    props.setClicked(true)
+    props.setIndex(id)
+    console.log('clicked')
+  }
 
   // <p key={project.id}>{project.title}</p>
 
   if(projects != undefined){
       return (
 
-        <section className='projects  overflow-y-scroll'>    
-        {projects.map((project: any) => {
+        <section className='projects overflow-y-scroll'>    
+        {projects.map((project: Project) => {
             // console.log(project)
             return (
               <div key={project.id} className='flex lg:flex-row sm:flex-col my-2 px-4 '>
@@ -27,17 +38,16 @@ export default function ProjectsSection(props: Props) {
               {/* Image and Buttons */}
               <div className='relative imageDiv w-56 h-40 bg-cover flex-shrink-0 sm:ml-auto sm:mr-auto'>
                 <img
-                  src={project.image}
-                  key={project.id}
+                  src={project.image}          
                   className='rounded-lg w-full h-full object-cover'
                   alt={project.image}
                 />
-                <a href={project.github} key={project.id} target="_blank">
+                <a href={project.github}  target="_blank">
                   <button className='github'>
                     <img src='github.png' className='w-full h-full object-cover' alt='Github image'/>
                   </button>
                 </a>
-                <a href={project.deployed}  key={project.id} target="_blank">
+                <a href={project.deployed}   target="_blank">
                   <button className='deployed'>
                     <img src='web.png' className='w-full h-full object-cover' alt='Github image'/>                
                   </button>
@@ -46,8 +56,10 @@ export default function ProjectsSection(props: Props) {
   
               {/* Text on right */}
               <div className='mx-2 border-b-4  border-b-[#000000] border-opacity-30 '>
-                <h4 className='mx-4 opacity-80 lg:text-left sm:text-center sm:mt-2 underline' key={project.id}>{project.title}</h4>
-                <p className='mx-4 opacity-80 mb-2 lg:text-left sm:text-center sm:mt-2' key={project.id}>
+                <a className='workTitle mx-4 opacity-80 lg:text-left sm:text-center sm:mt-2 underline cursor-pointer' onClick={() => handleClick(project.id)}>
+                  {project.title}
+                </a>
+                <p className='mx-4 opacity-80 mb-2 lg:text-left sm:text-center sm:mt-2'>
                   {project.description}
                 </p>
               </div>
@@ -59,7 +71,7 @@ export default function ProjectsSection(props: Props) {
     )  
   } else {
     return(
-      <div></div>
+      <div>No projects! Get workin</div>
     )
   }
 }

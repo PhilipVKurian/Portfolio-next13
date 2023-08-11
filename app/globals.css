@@ -91,6 +91,15 @@ h4 {
  @apply absolute w-10 h-10 bottom-4 right-[30%] bg-white rounded-lg invisible border-l-[#5a575a] border-l-2 border-t-[#7e7c7e] border-t-2
 }
 
+.workTitle{
+  @apply text-2xl font-normal;
+  font-family: var(--font-hanuman);
+}
+
+.back {
+  @apply absolute h-10 w-10 bottom-4 z-10 left-[5%] bg-slate-300 rounded-lg border-l-[#5a575a]  border-l-2 border-t-[#7e7c7e] border-t-2
+}
+
 #glass-contact {
   @apply lg:h-[780px] lg:w-[1200px] md:h-[600px] md:w-[800px] sm:h-[700px] sm:w-[380px] bg-white/10 lg:my-0 lg:mx-auto lg:mb-16 sm:mx-auto sm:my-10 rounded-2xl backdrop-filter backdrop-blur-sm shadow-lg border-l-[#2A2329] border-l border-t-[#2A2329] border-t;
   text-shadow: 2px 2px 2px black;
