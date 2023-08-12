@@ -40,7 +40,7 @@ export const Projects: Project[] = [
         id: 4,
         title: "Phaser 3 Game",
         image: "phaser-app.PNG",
-        techimages: [""],
+        techimages: [],
         description: "A side project im working on. Using the Phaser 3 game engine with tiled maps to create a virtual world that the player can interact with.. Still a work in progress",
         tech: ["Phaser3","Typescript","Tiled"],
         github: "https://github.com/PhilipVKurian/typescript-parcel-game",

@@ -106,7 +106,7 @@ h4 {
 }
 
 .back:hover {
-  @apply bg-purple-300
+  @apply bg-stone-400
 }
 
 #glass-contact {

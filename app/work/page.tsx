@@ -43,30 +43,42 @@ export default function WorkPage() {
 
         <h4 className='text-center my-8 opacity-50'>{item?.title}</h4>
 
-        <div className='projectDetails relative flex md:flex-row flex-col'>
+        <a className='absolute left-[8%]' onClick={()=> {setClicked(false)}}>
+          <button className='back'>
+            <img src='backarrow.png' className='w-full h-full object-cover' alt='Back arrow image'/>
+          </button>          
+        </a>
 
-          <a className='absolute left-[8%]' onClick={()=> {setClicked(false)}}>
-            <button className='back'>
-              <img src='backarrow.png' className='w-full h-full object-cover' alt='Back arrow image'/>
-            </button>
-          </a>
+        <div className='overflow-auto absolute mx-2 h-[80%]'>
 
-          <img src={item?.image} className='flex-shrink-0 xl:w-[600px] xl:h-[400px] md:w-[300px] md:h-[250px] sm:w-[200px] sm:h-[140px] md:mx-6 mx-auto  md:my-3 rounded-xl drop-shadow-2xl' alt={item?.title} />
+            <div className='projectDetails relative flex md:flex-row flex-col'>
 
-          <div className='flex sm:flex-col flex-row'>
+              <img src={item?.image} className='flex-shrink-0 xl:w-[550px] xl:h-[400px] md:w-[300px] md:h-[250px] sm:w-[200px] sm:h-[140px] md:mx-6 mx-auto md:my-3 rounded-xl border drop-shadow-2xl' alt={item?.title} />
 
-            <p className="px-4 font-semibold md:text-lg text-sm  md:text-left text-center my-2 drop-shadow-sm opacity-70 ">{item?.description}</p>
+              <div className='flex sm:flex-col flex-row'>
 
-            <div className='work-tech-stack flex flex-row space-x-6 my-auto mx-auto'>
-              {item?.techimages.map((tech:string) =>{
-                return(
-                  <img src={tech} alt={tech} key={tech} className='lg:w-[48px] lg:h-[48px] w-[30px] h-[30px]'/>
-                )
-              })}
+                <h4 className='text-center my-5 opacity-50'>The Project</h4>
+
+                <p className="px-4 font-semibold md:text-lg text-sm  md:text-left text-center my-2 drop-shadow-sm opacity-70 ">{item?.description}</p>
+
+                <h4 className='text-center my-5 opacity-50'>Stack</h4>
+
+                <div className='work-tech-stack flex flex-row space-x-6  mx-auto'>
+                  {item?.techimages.map((tech:string) =>{
+                    return(
+                      <img src={tech} alt={tech} key={tech} className='lg:w-[48px] lg:h-[48px] w-[30px] h-[30px]'/>
+                    )
+                  })}
+                </div>
+
+              </div>
             </div>
-
+        
+          <div className='absolute sm:max-h-48 max-h-32 mr-4'>
+            <h4 className='text-center my-8  sm:my-3 opacity-50'>Usage</h4>
+            <p className='sm:mx-20 mx-10  font-semibold md:text-lg text-sm  md:text-left text-center md:my-5 mb-4 drop-shadow-sm opacity-70'>{item?.usage}</p>
           </div>
-
+          
         </div>
 
       </article>
