@@ -11,3 +11,11 @@ type Project = {
 }
 
 type Projects = Project[]
+
+type Contact = {
+    path: string,
+    title: string,
+    link: string
+}
+
+type contacts = Concact[]
