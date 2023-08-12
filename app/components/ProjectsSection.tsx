@@ -29,7 +29,7 @@ export default function ProjectsSection(props: Props) {
   if(projects != undefined){
       return (
 
-        <section className='projects overflow-y-scroll'>    
+        <section className='projects overflow-y-scroll overscroll-y-auto'>    
         {projects.map((project: Project) => {
             // console.log(project)
             return (
@@ -59,9 +59,11 @@ export default function ProjectsSection(props: Props) {
                 <a className='workTitle mx-4 opacity-80 lg:text-left sm:text-center sm:mt-2 underline cursor-pointer' onClick={() => handleClick(project.id)}>
                   {project.title}
                 </a>
-                <p className='mx-4 opacity-80 mb-2 lg:text-left sm:text-center sm:mt-2'>
-                  {project.description}
-                </p>
+                <a className='cursor-pointer' onClick={() => handleClick(project.id)}>
+                  <p className='mx-4 opacity-80 mb-2 lg:text-left sm:text-center sm:mt-2'>
+                    {project.description}
+                  </p>
+                </a>
               </div>
   
             </div>           

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+
 body {
   color: white;
   background-color: cornflowerblue;
@@ -98,6 +103,10 @@ h4 {
 
 .back {
   @apply absolute h-10 w-10 bottom-4 z-10 left-[5%] bg-slate-300 rounded-lg border-l-[#5a575a]  border-l-2 border-t-[#7e7c7e] border-t-2
+}
+
+.back:hover {
+  @apply bg-purple-300
 }
 
 #glass-contact {
